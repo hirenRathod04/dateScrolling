@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         val three =  SimpleDateFormat("E")
         val weekday = SimpleDateFormat("E MMMM", Locale.ENGLISH).format(GregorianCalendar(1989, 8, 24).time)
         //val month = SimpleDateFormat("", Locale.ENGLISH).format(GregorianCalendar(1989, 8, 24).time)
-        val arr = weekday.split(" ")
+        val arr = weekday.split(" ")//string to array
         Toast.makeText(this,"${arr[0]} : ${arr[1]}",Toast.LENGTH_LONG).show()
 
         button = findViewById(R.id.button)
